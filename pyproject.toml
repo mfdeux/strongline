@@ -7,6 +7,10 @@ authors = ["Marc Ford <mrfxyz567@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 pydantic = "^1.6.1"
+channels = { version = "^2.4", optional = true }
+
+[tool.poetry.extras]
+django = ["channels"]
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
